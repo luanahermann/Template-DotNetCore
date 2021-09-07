@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateCoreNicolas", "TemplateCoreNicolas.csproj", "{30750E53-C9DF-4DE7-8600-D63FE9400BB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateCoreNicolas", "TemplateCoreNicolas.csproj", "{30750E53-C9DF-4DE7-8600-D63FE9400BB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{8F632689-C33F-4FF4-9F3B-CB1021258928}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{2DDA605D-F900-4743-8206-9F4B2A739961}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{BAC80708-1B91-4B20-9AB4-0E5565F6E71F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{9C8F376E-2CD7-4FFA-9318-26A90C830460}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateCoreNicolas.Application", "TemplateCoreNicolas.Application\TemplateCoreNicolas.Application.csproj", "{352F8009-45EB-414C-903B-92227D0F82BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateCoreNicolas.Domain", "TemplateCoreNicolas.Domain\TemplateCoreNicolas.Domain.csproj", "{C8845F6D-9AB6-4AE7-80D2-71D03CDDE04C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateCoreNicolas.Data", "TemplateCoreNicolas.Infra\TemplateCoreNicolas.Data.csproj", "{6FF974DF-1399-4AA7-964C-DDC7CB5C5045}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{B2A148AE-61FD-4A04-B90A-B8290128338F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{A72331FB-9159-40E8-A03D-ADA2E5716560}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +33,29 @@ Global
 		{30750E53-C9DF-4DE7-8600-D63FE9400BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30750E53-C9DF-4DE7-8600-D63FE9400BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30750E53-C9DF-4DE7-8600-D63FE9400BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{352F8009-45EB-414C-903B-92227D0F82BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{352F8009-45EB-414C-903B-92227D0F82BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{352F8009-45EB-414C-903B-92227D0F82BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{352F8009-45EB-414C-903B-92227D0F82BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8845F6D-9AB6-4AE7-80D2-71D03CDDE04C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8845F6D-9AB6-4AE7-80D2-71D03CDDE04C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8845F6D-9AB6-4AE7-80D2-71D03CDDE04C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8845F6D-9AB6-4AE7-80D2-71D03CDDE04C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF974DF-1399-4AA7-964C-DDC7CB5C5045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF974DF-1399-4AA7-964C-DDC7CB5C5045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF974DF-1399-4AA7-964C-DDC7CB5C5045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF974DF-1399-4AA7-964C-DDC7CB5C5045}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{30750E53-C9DF-4DE7-8600-D63FE9400BB1} = {8F632689-C33F-4FF4-9F3B-CB1021258928}
+		{352F8009-45EB-414C-903B-92227D0F82BA} = {2DDA605D-F900-4743-8206-9F4B2A739961}
+		{C8845F6D-9AB6-4AE7-80D2-71D03CDDE04C} = {BAC80708-1B91-4B20-9AB4-0E5565F6E71F}
+		{6FF974DF-1399-4AA7-964C-DDC7CB5C5045} = {B2A148AE-61FD-4A04-B90A-B8290128338F}
+		{B2A148AE-61FD-4A04-B90A-B8290128338F} = {9C8F376E-2CD7-4FFA-9318-26A90C830460}
+		{A72331FB-9159-40E8-A03D-ADA2E5716560} = {9C8F376E-2CD7-4FFA-9318-26A90C830460}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {509CB200-B1DF-49A1-A3F2-D05EA42009D7}
